@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.env/
+.venv/
+venv/
+
+# Model weights and outputs
+*.pt
+*.onnx
+*.tflite
+*.engine
+runs/
+
+# Image outputs and test artifacts
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+
+# Streamlit temporary files
+.streamlit/
+
+# Jupyter/IPython
+.ipynb_checkpoints
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs and dumps
+*.log
+*.pkl
+*.h5

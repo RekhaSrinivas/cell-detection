@@ -1,0 +1,19 @@
+name: Train YOLOv8 Model
+
+on: [push]
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Run training
+      run: |
+        python backend/train.py --data data.yaml --epochs 30 --imgsz 640
