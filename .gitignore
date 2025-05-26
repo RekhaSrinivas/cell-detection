@@ -16,12 +16,12 @@ venv/
 runs/
 
 # Image outputs and test artifacts
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.webp
-
+# *.jpg
+# *.jpeg
+# *.png
+# *.bmp
+# *.webp
+BCCD/
 # Streamlit temporary files
 .streamlit/
 
